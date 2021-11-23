@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: #0d192b;
+  max-width: 1440px;
+  font-size: 18px;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
+
+.card1 {
+  background-color: #0d1a2d;
+  border-radius: 3rem;
+  padding: 2rem;
+  margin: 4rem 4rem 1rem 4rem;
+}
+
+.card2 {
+  background-color: #0c1627;
+  border-radius: 3rem;
+  padding: 0 1rem 2.5rem 1rem;
+}
+
+.card3 {
+  background-color: #14253d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  width: 20rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.card3 .top {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: .5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.card3 .top .icon-view {
+  display: none;
+  height: 2rem;
+  width: auto;
+  position: absolute;
+}
+
+.card3 .top img {
+  display: block;
+  height: 17rem;
+  width: 100%;
+}
+
+.card3 .top:hover {
+  background-color: #00fff7;
+  cursor: pointer;
+}
+
+.card3 .top:hover .icon-view {
+  display: block;
+  opacity: 100%;
+}
+
+.card3 .top:hover img {
+  opacity: 50%;
+}
+
+.card3 h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.card3 h1:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card3 p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #8bacda;
+  width: 18rem;
+}
+
+.card3 .time-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: .9rem;
+}
+
+.card3 .time-left .period {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card3 .time-left .period img {
+  margin-right: .3rem;
+}
+
+.card3 .time-left .etherum {
+  color: #00fff7;
+}
+
+.card3 .time-left .clock {
+  color: #8bacda;
+}
+
+.card3 .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #2f415b;
+  padding-top: 1rem;
+}
+
+.card3 .bottom img {
+  height: 2rem;
+  width: auto;
+  border: 1px solid white;
+  border-radius: 50rem;
+  margin-right: 1rem;
+}
+
+.card3 .bottom p {
+  color: #8bacda;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.card3 .bottom p span {
+  color: white;
+}
+
+.card3 .bottom p span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #8bacda;
+  padding: 1rem;
+}
+
+.attribution a {
+  color: #8bacda;
+}
+
+.attribution a:hover {
+  color: #00fff7;
+}
+
+@media (max-width: 768px) {
+  .card1 {
+    padding: 0;
+    margin: 4rem 0 1rem 0;
+  }
+  .card2 {
+    border-radius: 2rem;
+    padding: 1.5rem;
+  }
+}
